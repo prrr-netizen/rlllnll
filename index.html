@@ -7,216 +7,250 @@
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen text-slate-50 bg-slate-950">
-  <div class="min-h-screen bg-[radial-gradient(circle_at_top,_#1e293b,_#020617)]">
-    <main>
-      <!-- 상단 네비 -->
-      <header class="border-b border-slate-800/70 bg-slate-950/70 backdrop-blur">
-        <div class="max-w-5xl mx-auto flex items-center justify-between py-4 px-4">
-          <div class="font-bold text-lg tracking-tight">RLNL Studio</div>
-          <nav class="flex gap-4 text-sm text-slate-300">
-            <a href="#features" class="hover:text-violet-400">기능</a>
-            <a href="#stats" class="hover:text-violet-400">통계</a>
-            <a href="#pricing" class="hover:text-violet-400">요금</a>
-            <a href="#faq" class="hover:text-violet-400">FAQ</a>
-            <a href="#links" class="hover:text-violet-400">링크</a>
-          </nav>
-        </div>
-      </header>
+<body class="min-h-screen text-slate-900 bg-white">
+  <main>
+    <!-- 상단 네비 -->
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur">
+      <div class="max-w-5xl mx-auto flex items-center justify-between py-4 px-4">
+        <div class="font-bold text-lg tracking-tight">RLNL Studio</div>
+        <nav class="flex gap-4 text-sm text-slate-600">
+          <a href="#features" class="hover:text-violet-500">기능</a>
+          <a href="#stats" class="hover:text-violet-500">통계</a>
+          <a href="#pricing" class="hover:text-violet-500">요금</a>
+          <a href="#faq" class="hover:text-violet-500">FAQ</a>
+          <a href="#links" class="hover:text-violet-500">링크</a>
+        </nav>
+      </div>
+    </header>
 
-      <!-- Hero 섹션 -->
-      <section class="max-w-5xl mx-auto px-4 py-20">
-        <p class="text-xs font-medium uppercase tracking-[0.2em] text-violet-400 mb-3">
-          Discord Economy · Game Bot
-        </p>
-        <h1 class="text-2xl md:text-4xl font-extrabold mb-4 leading-snug">
-          <span class="relative inline-block">
-            <span class="relative z-10 bg-gradient-to-r from-violet-300 via-fuchsia-400 to-violet-300 bg-clip-text text-transparent">
-              디스코드 경제·게임 시스템을
-              <br class="hidden md:block" />
-              한 번에, 안정적으로 운영하세요
+    <!-- Hero 섹션 -->
+    <section class="max-w-5xl mx-auto px-4 py-16">
+      <p class="text-xs font-medium uppercase tracking-[0.2em] text-violet-500 mb-3">
+        Discord Economy · Game Bot
+      </p>
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <!-- 왼쪽: 텍스트 -->
+        <div>
+          <h1 class="text-2xl md:text-4xl font-extrabold mb-4 leading-snug">
+            <span class="relative inline-block">
+              <span class="relative z-10 bg-gradient-to-r from-violet-500 via-fuchsia-500 to-violet-500 bg-clip-text text-transparent">
+                디스코드 경제·게임 시스템을
+                <br class="hidden md:block" />
+                한 번에, 안정적으로 운영하세요
+              </span>
+              <!-- LED 글로우 (흰 배경용, 살짝만) -->
+              <span class="absolute inset-0 blur-md opacity-30 bg-gradient-to-r from-violet-300 via-fuchsia-300 to-violet-300 animate-pulse"></span>
             </span>
-            <!-- LED 글로우 -->
-            <span class="absolute inset-0 blur-md opacity-40 bg-gradient-to-r from-violet-300 via-fuchsia-300 to-violet-300 animate-pulse"></span>
-          </span>
-        </h1>
-        <p class="text-slate-300 mb-7 text-sm md:text-base max-w-2xl">
-          게임, 상점, 은행까지 통합된 경제 봇입니다.  
-          로그와 밸런스를 우선으로 설계해, 코인 인플레이션과 기록 유실 걱정을 줄이고  
-          운영자는 이벤트·커뮤니티 운영에만 집중할 수 있도록 도와줍니다.
-        </p>
-        <div class="flex flex-wrap gap-3 items-center">
-          <a
-            href="https://discord.gg/yEym2KZ9BU"
-            class="px-5 py-2.5 rounded-full bg-violet-500 hover:bg-violet-600 text-xs md:text-sm font-semibold shadow-lg shadow-violet-500/30 transition"
-          >
-            RLNL 봇 서버에 초대하기
-          </a>
-          <a
-            href="#features"
-            class="px-5 py-2.5 rounded-full border border-slate-600 hover:border-violet-500/70 text-xs md:text-sm font-medium text-slate-200 transition"
-          >
-            기능·명령어 먼저 살펴보기
-          </a>
-          <span class="text-[11px] md:text-xs text-slate-500">
-            설치 전, 테스트 서버에서 먼저 운용해 보는 것을 추천합니다.
-          </span>
-        </div>
-      </section>
-
-      <!-- 통계 섹션 -->
-      <section id="stats" class="max-w-5xl mx-auto px-4 pb-12">
-        <h2 class="text-lg font-semibold mb-4">📈 안정적으로 쌓아 온 기록</h2>
-        <ul class="space-y-1 text-slate-300 text-sm">
-          <li>2026. 03 : 누적 000개 이상의 디스코드 서버에서 운영</li>
-          <li>2026. 03 : 공개 베타 시작, 주요 버그 패치 완료</li>
-          <li>2026. 01 : RLNL 첫 공개 및 내부 서버 검증 완료</li>
-        </ul>
-      </section>
-
-      <!-- 왜 RLNL인가 섹션 -->
-      <section class="max-w-5xl mx-auto px-4 pb-12">
-        <h2 class="text-lg font-semibold mb-4">🙋 왜 RLNL인가요?</h2>
-        <ul class="space-y-2 text-sm text-slate-300">
-          <li>· 실제 운영 중인 서버에서 피드백을 받아, 운영자가 직접 불편했던 점 위주로 개선했습니다.</li>
-          <li>· 경제 시스템 악용·버그 사례를 기준으로, 밸런스와 로그를 우선 설계했습니다.</li>
-          <li>· 디스코드 운영 경험이 있는 개발자가, “실제로 쓸 수 있는 봇”을 목표로 만들고 있습니다.</li>
-        </ul>
-      </section>
-
-      <!-- 어떤 서버에 맞는지 섹션 -->
-      <section class="max-w-5xl mx-auto px-4 pb-12">
-        <h2 class="text-lg font-semibold mb-4">🎯 이런 서버에 특히 잘 맞아요</h2>
-        <ul class="space-y-2 text-sm text-slate-300">
-          <li>· 다양한 게임 콘텐츠가 있는 디스코드 서버</li>
-          <li>· 코인/포인트로 역할·아이템을 판매하는 커뮤니티 서버</li>
-          <li>· 경제 시스템 악용을 최대한 막고 싶은 이벤트/시즌제 서버</li>
-        </ul>
-      </section>
-
-      <!-- 기능 섹션 -->
-      <section id="features" class="max-w-5xl mx-auto px-4 pb-12">
-        <h2 class="text-lg font-semibold mb-4">✨ 주요 기능</h2>
-        <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-300">
-          <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
-            <h3 class="font-semibold mb-2">🎰 게임</h3>
-            <p>
-              서버 전용 경제 시스템과 연동되는 카드 게임입니다.<br />
-              로그와 밸런스를 고려해 과도한 인플레이션을 막도록 설계했습니다.
-            </p>
-          </div>
-          <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
-            <h3 class="font-semibold mb-2">🛒 상점 / 자판기</h3>
-            <p>
-              역할, 아이템, 쿠폰 등 다양한 리워드를 안정적으로 판매·지급할 수 있는 상점 시스템입니다.
-            </p>
-          </div>
-          <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
-            <h3 class="font-semibold mb-2">🏦 은행 / 대출</h3>
-            <p>
-              예금·대출을 분리해 관리하고, 악용을 막기 위한 쿨타임과 한도 설정 옵션을 제공합니다.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 요금 섹션 -->
-      <section id="pricing" class="max-w-5xl mx-auto px-4 pb-12">
-        <h2 class="text-lg font-semibold mb-4">💳 이용 요금</h2>
-        <p class="text-slate-400 text-sm mb-4">
-          기본 기능은 무료 제공을 목표로 하고 있으며, 아래 고급 기능은 별도 플랜으로 제공됩니다.
-        </p>
-        <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-300">
-          <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
-            <h3 class="font-semibold mb-2">무료 플랜</h3>
-            <p class="mb-2">소규모 서버, 테스트용 추천</p>
-            <ul class="space-y-1 text-slate-400">
-              <li>· 기본 게임 / 상점 / 은행 기능</li>
-              <li>· 로그 보관 기본 한도</li>
-              <li>· 커뮤니티 지원</li>
-            </ul>
-          </div>
-          <div class="border border-violet-500 rounded-lg p-4 bg-violet-500/5">
-            <h3 class="font-semibold mb-2">프로 플랜</h3>
-            <p class="mb-2">중형 이상 서버 추천</p>
-            <ul class="space-y-1 text-slate-400 mb-3">
-              <li>· 확장된 로그 보관·백업 한도</li>
-              <li>· 추가 커맨드 / 커스텀 기능</li>
-              <li>· 우선 지원</li>
-            </ul>
+          </h1>
+          <p class="text-slate-600 mb-7 text-sm md:text-base max-w-2xl">
+            게임, 상점, 은행까지 통합된 경제 봇입니다.  
+            로그와 밸런스를 우선으로 설계해, 코인 인플레이션과 기록 유실 걱정을 줄이고  
+            운영자는 이벤트·커뮤니티 운영에만 집중할 수 있도록 도와줍니다.
+          </p>
+          <div class="flex flex-wrap gap-3 items-center">
             <a
               href="https://discord.gg/yEym2KZ9BU"
-              class="inline-block mt-1 px-3 py-1 rounded-full bg-violet-500 hover:bg-violet-600 text-xs font-medium"
+              class="px-5 py-2.5 rounded-full bg-violet-500 hover:bg-violet-600 text-xs md:text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition"
             >
-              결제 / 문의하기
+              RLNL 봇 서버에 초대하기
             </a>
-          </div>
-          <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
-            <h3 class="font-semibold mb-2">커스텀 플랜</h3>
-            <p class="mb-2">맞춤 개발·대형 서버용</p>
-            <ul class="space-y-1 text-slate-400 mb-3">
-              <li>· 별도 기능 기획·개발</li>
-              <li>· 인프라·호스팅 협의</li>
-              <li>· 운영 컨설팅</li>
-            </ul>
             <a
-              href="1대1_문의_URL"
-              class="inline-block mt-1 px-3 py-1 rounded-full border border-slate-600 text-xs font-medium hover:border-violet-500/70"
+              href="#features"
+              class="px-5 py-2.5 rounded-full border border-slate-300 hover:border-violet-400 text-xs md:text-sm font-medium text-slate-700 transition"
             >
-              1:1 상담하기
+              기능·명령어 먼저 살펴보기
             </a>
           </div>
+          <p class="mt-3 text-[11px] md:text-xs text-slate-500">
+            설치 전, 테스트 서버에서 먼저 운용해 보는 것을 추천합니다.
+          </p>
         </div>
-      </section>
 
-      <!-- FAQ 섹션 -->
-      <section id="faq" class="max-w-5xl mx-auto px-4 pb-12">
-        <h2 class="text-lg font-semibold mb-4">❓ 자주 묻는 질문</h2>
-        <div class="space-y-3 text-sm text-slate-300">
-          <div>
-            <p class="font-semibold">Q. 무료로 쓸 수 있나요?</p>
-            <p class="text-slate-400">
-              A. 기본 기능은 무료 제공을 목표로 하고 있고, 일부 고급 기능만 유료로 분리할 예정입니다.
+        <!-- 오른쪽: 카드 3개 (연홍 느낌) -->
+        <div class="grid gap-3">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm">
+            <p class="text-[11px] font-medium text-violet-600 mb-1">FEATURE</p>
+            <p class="text-sm font-semibold text-slate-900 mb-1">
+              게임·상점·은행까지 한 번에
+            </p>
+            <p class="text-xs text-slate-500">
+              여러 봇을 섞을 필요 없이, 하나의 경제 시스템으로 모든 커맨드를 관리할 수 있어요.
             </p>
           </div>
-          <div>
-            <p class="font-semibold">Q. 서버가 커져도 버틸 수 있나요?</p>
-            <p class="text-slate-400">
-              A. 여러 중형 서버에서 먼저 검증한 뒤 공개되었으며,
-              로그와 쿨타임으로 과부하를 줄이도록 설계했습니다.
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm">
+            <p class="text-[11px] font-medium text-violet-600 mb-1">STABILITY</p>
+            <p class="text-sm font-semibold text-slate-900 mb-1">
+              로그·밸런스 우선 설계
+            </p>
+            <p class="text-xs text-slate-500">
+              악용·버그에 대비한 로그와 쿨타임, 한도로 경제 인플레와 사고를 줄여줍니다.
             </p>
           </div>
-          <div>
-            <p class="font-semibold">Q. 버그나 문의는 어디로 보내나요?</p>
-            <p class="text-slate-400">
-              A. 아래 공식 지원 서버에서 이슈를 남겨주시면, 가능한 한 빠르게 확인하고 대응합니다.
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 shadow-sm">
+            <p class="text-[11px] font-medium text-violet-600 mb-1">FOR ADMINS</p>
+            <p class="text-sm font-semibold text-slate-900 mb-1">
+              운영자는 운영에만 집중
+            </p>
+            <p class="text-xs text-slate-500">
+              경제 시스템은 RLNL에 맡기고, 이벤트·커뮤니티 운영에 시간을 쓰세요.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- 링크 섹션 -->
-      <section id="links" class="max-w-5xl mx-auto px-4 pb-16">
-        <h2 class="text-lg font-semibold mb-4">🔗 RLNL 바로가기</h2>
-        <ul class="space-y-2 text-sm text-slate-300">
-          <li>
-            공식 지원 서버:
-            <a class="text-violet-400 hover:text-violet-300" href="https://discord.gg/yEym2KZ9BU">문의·공지 보러 가기</a>
-          </li>
-        </ul>
-      </section>
+    <!-- 통계 섹션 -->
+    <section id="stats" class="max-w-5xl mx-auto px-4 pb-12">
+      <h2 class="text-lg font-semibold mb-4">📈 안정적으로 쌓아 온 기록</h2>
+      <ul class="space-y-1 text-slate-700 text-sm">
+        <li>2026. 03 : 누적 000개 이상의 디스코드 서버에서 운영</li>
+        <li>2026. 03 : 공개 베타 시작, 주요 버그 패치 완료</li>
+        <li>2026. 01 : RLNL 첫 공개 및 내부 서버 검증 완료</li>
+      </ul>
+    </section>
 
-      <!-- 푸터 -->
-      <footer class="border-t border-slate-800/70">
-        <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-slate-500 flex items-center justify-between">
-          <span>© <span id="year"></span> RLNL Studio. All rights reserved.</span>
-          <span class="text-[10px] text-slate-600">
-            Built with Tailwind CSS.
-          </span>
+    <!-- 왜 RLNL인가 섹션 -->
+    <section class="max-w-5xl mx-auto px-4 pb-12">
+      <h2 class="text-lg font-semibold mb-4">🙋 왜 RLNL인가요?</h2>
+      <ul class="space-y-2 text-sm text-slate-700">
+        <li>· 실제 운영 중인 서버에서 피드백을 받아, 운영자가 직접 불편했던 점 위주로 개선했습니다.</li>
+        <li>· 경제 시스템 악용·버그 사례를 기준으로, 밸런스와 로그를 우선 설계했습니다.</li>
+        <li>· 디스코드 운영 경험이 있는 개발자가, “실제로 쓸 수 있는 봇”을 목표로 만들고 있습니다.</li>
+      </ul>
+    </section>
+
+    <!-- 어떤 서버에 맞는지 섹션 -->
+    <section class="max-w-5xl mx-auto px-4 pb-12">
+      <h2 class="text-lg font-semibold mb-4">🎯 이런 서버에 특히 잘 맞아요</h2>
+      <ul class="space-y-2 text-sm text-slate-700">
+        <li>· 다양한 게임 콘텐츠가 있는 디스코드 서버</li>
+        <li>· 코인/포인트로 역할·아이템을 판매하는 커뮤니티 서버</li>
+        <li>· 경제 시스템 악용을 최대한 막고 싶은 이벤트/시즌제 서버</li>
+      </ul>
+    </section>
+
+    <!-- 기능 섹션 -->
+    <section id="features" class="max-w-5xl mx-auto px-4 pb-12">
+      <h2 class="text-lg font-semibold mb-4">✨ 주요 기능</h2>
+      <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-700">
+        <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+          <h3 class="font-semibold mb-2">🎰 게임</h3>
+          <p>
+            서버 전용 경제 시스템과 연동되는 카드 게임입니다.<br />
+            로그와 밸런스를 고려해 과도한 인플레이션을 막도록 설계했습니다.
+          </p>
         </div>
-      </footer>
-    </main>
-  </div>
+        <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+          <h3 class="font-semibold mb-2">🛒 상점 / 자판기</h3>
+          <p>
+            역할, 아이템, 쿠폰 등 다양한 리워드를 안정적으로 판매·지급할 수 있는 상점 시스템입니다.
+          </p>
+        </div>
+        <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+          <h3 class="font-semibold mb-2">🏦 은행 / 대출</h3>
+          <p>
+            예금·대출을 분리해 관리하고, 악용을 막기 위한 쿨타임과 한도 설정 옵션을 제공합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 요금 섹션 -->
+    <section id="pricing" class="max-w-5xl mx-auto px-4 pb-12">
+      <h2 class="text-lg font-semibold mb-4">💳 이용 요금</h2>
+      <p class="text-slate-500 text-sm mb-4">
+        기본 기능은 무료 제공을 목표로 하고 있으며, 아래 고급 기능은 별도 플랜으로 제공됩니다.
+      </p>
+      <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-700">
+        <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+          <h3 class="font-semibold mb-2">무료 플랜</h3>
+          <p class="mb-2">소규모 서버, 테스트용 추천</p>
+          <ul class="space-y-1 text-slate-500">
+            <li>· 기본 게임 / 상점 / 은행 기능</li>
+            <li>· 로그 보관 기본 한도</li>
+            <li>· 커뮤니티 지원</li>
+          </ul>
+        </div>
+        <div class="border border-violet-400 rounded-lg p-4 bg-violet-50">
+          <h3 class="font-semibold mb-2">프로 플랜</h3>
+          <p class="mb-2">중형 이상 서버 추천</p>
+          <ul class="space-y-1 text-slate-600 mb-3">
+            <li>· 확장된 로그 보관·백업 한도</li>
+            <li>· 추가 커맨드 / 커스텀 기능</li>
+            <li>· 우선 지원</li>
+          </ul>
+          <a
+            href="https://discord.gg/yEym2KZ9BU"
+            class="inline-block mt-1 px-3 py-1 rounded-full bg-violet-500 hover:bg-violet-600 text-xs font-medium text-white"
+          >
+            결제 / 문의하기
+          </a>
+        </div>
+        <div class="border border-slate-200 rounded-lg p-4 bg-slate-50">
+          <h3 class="font-semibold mb-2">커스텀 플랜</h3>
+          <p class="mb-2">맞춤 개발·대형 서버용</p>
+          <ul class="space-y-1 text-slate-500 mb-3">
+            <li>· 별도 기능 기획·개발</li>
+            <li>· 인프라·호스팅 협의</li>
+            <li>· 운영 컨설팅</li>
+          </ul>
+          <a
+            href="https://discord.gg/yEym2KZ9BU"
+            class="inline-block mt-1 px-3 py-1 rounded-full border border-slate-300 text-xs font-medium hover:border-violet-400"
+          >
+            1:1 상담하기
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ 섹션 -->
+    <section id="faq" class="max-w-5xl mx-auto px-4 pb-12">
+      <h2 class="text-lg font-semibold mb-4">❓ 자주 묻는 질문</h2>
+      <div class="space-y-3 text-sm text-slate-700">
+        <div>
+          <p class="font-semibold">Q. 무료로 쓸 수 있나요?</p>
+          <p class="text-slate-500">
+            A. 기본 기능은 무료 제공을 목표로 하고 있고, 일부 고급 기능만 유료로 분리할 예정입니다.
+          </p>
+        </div>
+        <div>
+          <p class="font-semibold">Q. 서버가 커져도 버틸 수 있나요?</p>
+          <p class="text-slate-500">
+            A. 여러 중형 서버에서 먼저 검증한 뒤 공개되었으며,
+            로그와 쿨타임으로 과부하를 줄이도록 설계했습니다.
+          </p>
+        </div>
+        <div>
+          <p class="font-semibold">Q. 버그나 문의는 어디로 보내나요?</p>
+          <p class="text-slate-500">
+            A. 아래 공식 지원 서버에서 이슈를 남겨주시면, 가능한 한 빠르게 확인하고 대응합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 링크 섹션 -->
+    <section id="links" class="max-w-5xl mx-auto px-4 pb-16">
+      <h2 class="text-lg font-semibold mb-4">🔗 RLNL 바로가기</h2>
+      <ul class="space-y-2 text-sm text-slate-700">
+        <li>
+          공식 지원 서버:
+          <a class="text-violet-500 hover:text-violet-600" href="https://discord.gg/yEym2KZ9BU">문의·공지 보러 가기</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="border-t border-slate-200">
+      <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-slate-500 flex items-center justify-between">
+        <span>© <span id="year"></span> RLNL Studio. All rights reserved.</span>
+        <span class="text-[10px] text-slate-400">
+          Built with Tailwind CSS.
+        </span>
+      </div>
+    </footer>
+  </main>
 
   <script>
     // 연도 자동 표시
