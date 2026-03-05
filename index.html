@@ -10,41 +10,49 @@
 <body class="min-h-screen bg-slate-950 text-slate-50">
   <main>
     <!-- 상단 네비 -->
-    <header class="border-b border-slate-800">
+    <header class="border-b border-slate-800/70 bg-slate-950/80 backdrop-blur">
       <div class="max-w-5xl mx-auto flex items-center justify-between py-4 px-4">
-        <div class="font-bold text-lg">RLNL Studio</div>
+        <div class="font-bold text-lg tracking-tight">RLNL Studio</div>
         <nav class="flex gap-4 text-sm text-slate-300">
-          <a href="#features">기능</a>
-          <a href="#stats">통계</a>
-          <a href="#pricing">요금</a>
-          <a href="#faq">FAQ</a>
-          <a href="#links">링크</a>
+          <a href="#features" class="hover:text-violet-400">기능</a>
+          <a href="#stats" class="hover:text-violet-400">통계</a>
+          <a href="#pricing" class="hover:text-violet-400">요금</a>
+          <a href="#faq" class="hover:text-violet-400">FAQ</a>
+          <a href="#links" class="hover:text-violet-400">링크</a>
         </nav>
       </div>
     </header>
 
     <!-- Hero 섹션 -->
-    <section class="max-w-5xl mx-auto px-4 py-16">
-      <h1 class="text-2xl md:text-4xl font-extrabold mb-4">
-        디스코드 경제·게임 시스템, 안전하게 맡길 수 있는 RLNL
-      </h1>
-      <p class="text-slate-300 mb-6 text-sm md:text-base">
-        블랙잭, 상점, 은행까지 통합된 경제 봇을 한 번에 제공합니다.<br />
-        서버 폭주나 로그 유실 같은 리스크를 줄이고, 운영자는 재밌는 운영에만 집중할 수 있도록 설계했습니다.
+    <section class="max-w-5xl mx-auto px-4 py-20">
+      <p class="text-xs font-medium uppercase tracking-[0.2em] text-violet-400 mb-3">
+        Discord Economy · Game Bot
       </p>
-      <div class="flex flex-wrap gap-3">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-5 leading-tight">
+        RLNL로 디스코드 경제·게임 시스템을<br class="hidden md:block" />
+        한 번에, 안정적으로 운영하세요
+      </h1>
+      <p class="text-slate-300 mb-7 text-sm md:text-base max-w-2xl">
+        블랙잭, 상점, 은행까지 통합된 경제 봇입니다.  
+        로그와 밸런스를 우선으로 설계해, 코인 인플레이션과 기록 유실 걱정을 줄이고  
+        운영자는 이벤트·커뮤니티 운영에만 집중할 수 있도록 도와줍니다.
+      </p>
+      <div class="flex flex-wrap gap-3 items-center">
         <a
           href="디스코드_초대_URL"
-          class="px-4 py-2 rounded-md bg-violet-500 hover:bg-violet-600 text-xs md:text-sm font-medium"
+          class="px-5 py-2.5 rounded-full bg-violet-500 hover:bg-violet-600 text-xs md:text-sm font-semibold shadow-lg shadow-violet-500/30 transition"
         >
-          서버에 RLNL 초대하기
+          RLNL 봇 서버에 초대하기
         </a>
         <a
           href="#features"
-          class="px-4 py-2 rounded-md border border-slate-600 text-xs md:text-sm font-medium"
+          class="px-5 py-2.5 rounded-full border border-slate-600 hover:border-violet-500/70 text-xs md:text-sm font-medium text-slate-200 transition"
         >
-          기능·명령어 살펴보기
+          기능·명령어 먼저 살펴보기
         </a>
+        <span class="text-[11px] md:text-xs text-slate-500">
+          설치 전, 테스트 서버에서 먼저 운용해 보는 것을 추천합니다.
+        </span>
       </div>
     </section>
 
@@ -68,24 +76,34 @@
       </ul>
     </section>
 
+    <!-- 어떤 서버에 맞는지 섹션 -->
+    <section class="max-w-5xl mx-auto px-4 pb-12">
+      <h2 class="text-lg font-semibold mb-4">🎯 이런 서버에 특히 잘 맞아요</h2>
+      <ul class="space-y-2 text-sm text-slate-300">
+        <li>· 카지노·배팅 콘텐츠가 있는 디스코드 게임 서버</li>
+        <li>· 코인/포인트로 역할·아이템을 판매하는 커뮤니티 서버</li>
+        <li>· 경제 시스템 악용을 최대한 막고 싶은 이벤트/시즌제 서버</li>
+      </ul>
+    </section>
+
     <!-- 기능 섹션 -->
     <section id="features" class="max-w-5xl mx-auto px-4 pb-12">
       <h2 class="text-lg font-semibold mb-4">✨ 주요 기능</h2>
       <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-300">
-        <div class="border border-slate-800 rounded-lg p-4">
+        <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
           <h3 class="font-semibold mb-2">🎰 블랙잭 게임</h3>
           <p>
             서버 전용 경제 시스템과 연동되는 카드 게임입니다.<br />
             로그와 밸런스를 고려해 과도한 인플레이션을 막도록 설계했습니다.
           </p>
         </div>
-        <div class="border border-slate-800 rounded-lg p-4">
+        <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
           <h3 class="font-semibold mb-2">🛒 상점 / 자판기</h3>
           <p>
             역할, 아이템, 쿠폰 등 다양한 리워드를 안정적으로 판매·지급할 수 있는 상점 시스템입니다.
           </p>
         </div>
-        <div class="border border-slate-800 rounded-lg p-4">
+        <div class="border border-slate-800 rounded-lg p-4 bg-slate-900/40">
           <h3 class="font-semibold mb-2">🏦 은행 / 대출</h3>
           <p>
             예금·대출을 분리해 관리하고, 악용을 막기 위한 쿨타임과 한도 설정 옵션을 제공합니다.
@@ -110,7 +128,7 @@
             <li>· 커뮤니티 지원</li>
           </ul>
         </div>
-        <div class="border border-violet-500 rounded-lg p-4">
+        <div class="border border-violet-500 rounded-lg p-4 bg-violet-500/5">
           <h3 class="font-semibold mb-2">프로 플랜</h3>
           <p class="mb-2">중형 이상 서버 추천</p>
           <ul class="space-y-1 text-slate-400 mb-3">
@@ -120,7 +138,7 @@
           </ul>
           <a
             href="결제_또는_문의_URL"
-            class="inline-block mt-1 px-3 py-1 rounded-md bg-violet-500 hover:bg-violet-600 text-xs font-medium"
+            class="inline-block mt-1 px-3 py-1 rounded-full bg-violet-500 hover:bg-violet-600 text-xs font-medium"
           >
             결제 / 문의하기
           </a>
@@ -135,7 +153,7 @@
           </ul>
           <a
             href="1대1_문의_URL"
-            class="inline-block mt-1 px-3 py-1 rounded-md border border-slate-600 text-xs font-medium"
+            class="inline-block mt-1 px-3 py-1 rounded-full border border-slate-600 text-xs font-medium hover:border-violet-500/70"
           >
             1:1 상담하기
           </a>
@@ -175,15 +193,18 @@
       <ul class="space-y-2 text-sm text-slate-300">
         <li>
           공식 지원 서버:
-          <a class="text-violet-400" href="지원서버_URL">문의·공지 보러 가기</a>
+          <a class="text-violet-400 hover:text-violet-300" href="지원서버_URL">문의·공지 보러 가기</a>
         </li>
       </ul>
     </section>
 
     <!-- 푸터 -->
-    <footer class="border-t border-slate-800">
-      <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-slate-500">
-        © <span id="year"></span> RLNL Studio. All rights reserved.
+    <footer class="border-t border-slate-800/70">
+      <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-slate-500 flex items-center justify-between">
+        <span>© <span id="year"></span> RLNL Studio. All rights reserved.</span>
+        <span class="text-[10px] text-slate-600">
+          Built with Tailwind CSS.
+        </span>
       </div>
     </footer>
   </main>
