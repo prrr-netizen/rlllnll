@@ -19,7 +19,7 @@
   class="min-h-screen text-slate-50 bg-slate-950"
   style="font-family: 'Noto Sans KR', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;"
 >
-  <!-- 뒤 큰 배경: 살짝 그라데이션 -->
+  <!-- 뒤 큰 배경 -->
   <div class="min-h-screen bg-[radial-gradient(circle_at_top,_#1e293b,_#020617)]">
     <main>
       <!-- 상단 네비 -->
@@ -36,15 +36,15 @@
         </div>
       </header>
 
-      <!-- Hero 섹션 -->
+      <!-- Hero 섹션 (텍스트 + 큰 이미지) -->
       <section class="max-w-5xl mx-auto px-4 py-16">
-        <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-violet-400 mb-4">
-          Discord Economy · Game Bot
-        </p>
         <div class="grid md:grid-cols-2 gap-10 items-center">
           <!-- 왼쪽: 텍스트 -->
           <div>
-            <h1 class="text-xl md:text-3xl font-extrabold mb-4 leading-snug">
+            <p class="text-xs md:text-sm font-medium uppercase tracking-[0.25em] text-violet-400 mb-4">
+              Discord Economy · Game Bot
+            </p>
+            <h1 class="text-2xl md:text-4xl font-extrabold mb-4 leading-snug">
               <span class="relative inline-block">
                 <span class="relative z-10 bg-gradient-to-r from-violet-300 via-fuchsia-400 to-violet-300 bg-clip-text text-transparent">
                   디스코드 경제·게임 시스템을
@@ -55,7 +55,7 @@
                 <span class="absolute inset-0 blur-md opacity-40 bg-gradient-to-r from-violet-500 via-fuchsia-500 to-violet-500 animate-pulse"></span>
               </span>
             </h1>
-            <p class="text-slate-200 mb-8 text-sm md:text-base max-w-2xl">
+            <p class="text-slate-200 mb-7 text-sm md:text-base max-w-2xl">
               게임, 상점, 은행까지 통합된 경제 봇입니다.  
               로그와 밸런스를 우선으로 설계해, 코인 인플레이션과 기록 유실 걱정을 줄이고  
               운영자는 이벤트·커뮤니티 운영에만 집중할 수 있도록 도와줍니다.
@@ -79,34 +79,15 @@
             </p>
           </div>
 
-          <!-- 오른쪽: 카드 3개 -->
-          <div class="grid gap-3">
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-4 shadow-sm">
-              <p class="text-[11px] font-medium text-violet-300 mb-1">FEATURE</p>
-              <p class="text-sm md:text-base font-semibold text-slate-50 mb-1">
-                게임·상점·은행까지 한 번에
-              </p>
-              <p class="text-xs md:text-sm text-slate-400">
-                여러 봇을 섞을 필요 없이, 하나의 경제 시스템으로 모든 커맨드를 관리할 수 있어요.
-              </p>
-            </div>
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-4 shadow-sm">
-              <p class="text-[11px] font-medium text-violet-300 mb-1">STABILITY</p>
-              <p class="text-sm md:text-base font-semibold text-slate-50 mb-1">
-                로그·밸런스 우선 설계
-              </p>
-              <p class="text-xs md:text-sm text-slate-400">
-                악용·버그에 대비한 로그와 쿨타임, 한도로 경제 인플레와 사고를 줄여줍니다.
-              </p>
-            </div>
-            <div class="rounded-2xl border border-slate-800 bg-slate-900/70 px-4 py-4 shadow-sm">
-              <p class="text-[11px] font-medium text-violet-300 mb-1">FOR ADMINS</p>
-              <p class="text-sm md:text-base font-semibold text-slate-50 mb-1">
-                운영자는 운영에만 집중
-              </p>
-              <p class="text-xs md:text-sm text-slate-400">
-                경제 시스템은 RLNL에 맡기고, 이벤트·커뮤니티 운영에 시간을 쓰세요.
-              </p>
+          <!-- 오른쪽: 큰 이미지 -->
+          <div class="flex justify-center md:justify-end">
+            <div class="relative w-full max-w-md">
+              <div class="absolute -inset-3 bg-gradient-to-tr from-violet-500/40 via-fuchsia-500/30 to-sky-400/30 blur-2xl opacity-70"></div>
+              <img
+                src="https://cdn.phototourl.com/uploads/2026-03-06-05b4048c-0ab5-4f65-87e5-d2aea1dc0de7.gif"
+                alt="https://discord.gg/yEym2KZ9BU"
+                class="relative w-full aspect-[4/3] rounded-2xl border border-slate-800 object-cover shadow-2xl shadow-black/60"
+              />
             </div>
           </div>
         </div>
@@ -254,7 +235,7 @@
         <ul class="space-y-2 text-sm md:text-base text-slate-200">
           <li>
             공식 지원 서버:
-            <a class="text-violet-300 hover:text-violet-200" href="https://discord.gg/yEym2KZ9BU">문의·공지 보러 가기</a>
+            <a class="text-violet-300 hover:text-violet-200" href="https://discord.gg	yEym2KZ9BU">문의·공지 보러 가기</a>
           </li>
         </ul>
       </section>
